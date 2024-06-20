@@ -24,7 +24,7 @@ switcher:
   option_list_separator: "/"
 
 menu:
-  page_size: 4
+  page_size: 8
 
 punctuator:
   full_shape:
@@ -48,7 +48,7 @@ recognizer:
 ascii_composer:
   good_old_caps_lock: true
   switch_key:
-    Shift_L: noop
+    Shift_L: commit_code 
     Shift_R: commit_code # macOS 上此项无效，Windows 可用右 Shift 切换中英输入
     Control_L: noop
     Control_R: noop # macOS 上此项无效，Windows 上可自行定义
