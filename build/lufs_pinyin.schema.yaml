@@ -1,12 +1,16 @@
 __build_info:
   rime_version: 1.11.2
   timestamps:
-    default: 1722156659
-    default.custom: 0
+    default: 1717774589
+    default.custom: 1722161377
+    key_bindings: 1717774589
+    key_bindings.custom: 0
     lufs_pinyin.custom: 0
     lufs_pinyin.schema: 1718850476
     lufs_symbols: 1718850476
     lufs_symbols.custom: 0
+    punctuation: 1717774589
+    punctuation.custom: 0
 custom_phrase:
   db_class: stabledb
   dictionary: ""
@@ -48,16 +52,11 @@ grammar:
   language: "zh-hans-t-essay-bgw"
 key_binder:
   bindings:
-    - {accept: Tab, send: Page_Down, when: composing}
-    - {accept: "Shift+Tab", send: Page_Up, when: composing}
-    - {accept: equal, send: Page_Down, when: has_menu}
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: semicolon, send: 2, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
   import_preset: default
-  select_first_character: bracketleft
-  select_last_character: bracketright
 menu:
-  page_size: 8
+  page_size: 5
 punctuator:
   full_shape:
     " ": {commit: "　"}
@@ -336,11 +335,7 @@ punctuator:
 recognizer:
   import_preset: default
   patterns:
-    camel: "[a-z]+[A-Z].*$"
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
-    html: "^<[a-z]+>$"
-    punct: "^/([0-9]0?|[A-Za-z]+)$"
-    unicode: "^U[a-f0-9]+"
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 schema:
