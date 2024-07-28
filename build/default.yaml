@@ -1,0 +1,120 @@
+__build_info:
+  rime_version: 1.11.2
+  timestamps:
+    default: 1722156659
+    default.custom: 0
+    lufs_symbols: 1718850476
+    lufs_symbols.custom: 0
+ascii_composer:
+  good_old_caps_lock: true
+  switch_key:
+    Caps_Lock: commit_code
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: commit_code
+    Shift_R: commit_code
+config_version: "2023-12-18"
+key_binder:
+  bindings:
+    - {accept: Tab, send: Page_Down, when: composing}
+    - {accept: "Shift+Tab", send: Page_Up, when: composing}
+    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: minus, send: Page_Up, when: has_menu}
+    - {accept: semicolon, send: 2, when: has_menu}
+  select_first_character: bracketleft
+  select_last_character: bracketright
+menu:
+  page_size: 8
+punctuator:
+  full_shape:
+    " ": {commit: "　"}
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "#": ["＃", "⌘"]
+    "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
+    "%": ["％", "°", "℃"]
+    "&": "＆"
+    "'": {pair: ["‘", "’"]}
+    "(": "（"
+    ")": "）"
+    "*": ["＊", "·", "・", "×", "※", "❂"]
+    "+": "＋"
+    ",": {commit: "，"}
+    "-": "－"
+    .: {commit: "。"}
+    "/": ["／", "÷"]
+    ":": {commit: "："}
+    ";": {commit: "；"}
+    "<": ["《", "〈", "«", "‹"]
+    "=": "＝"
+    ">": ["》", "〉", "»", "›"]
+    "?": {commit: "？"}
+    "@": "＠"
+    "[": ["「", "【", "〔", "［"]
+    "\\": ["、", "＼"]
+    "]": ["」", "】", "〕", "］"]
+    "^": {commit: "……"}
+    _: "——"
+    "`": "｀"
+    "{": ["『", "〖", "｛"]
+    "|": ["·", "｜", "§", "¦"]
+    "}": ["』", "〗", "｝"]
+    "~": "～"
+  half_shape:
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "#": "#"
+    "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
+    "%": ["%", "％", "°", "℃"]
+    "&": "&"
+    "'": {pair: ["‘", "’"]}
+    "(": "（"
+    ")": "）"
+    "*": ["*", "＊", "·", "・", "×", "※", "❂"]
+    "+": "+"
+    ",": {commit: "，"}
+    "-": "-"
+    .: {commit: "。"}
+    "/": "/"
+    ":": {commit: "："}
+    ";": {commit: "；"}
+    "<": ["《", "〈", "«", "‹"]
+    "=": "="
+    ">": ["》", "〉", "»", "›"]
+    "?": {commit: "？"}
+    "@": "@"
+    "[": "「"
+    "\\": "、"
+    "]": "」"
+    "^": {commit: "……"}
+    _: "——"
+    "`": "`"
+    "{": "『"
+    "|": ["·", "|", "｜", "§", "¦"]
+    "}": "』"
+    "~": "～"
+recognizer:
+  patterns:
+    camel: "[a-z]+[A-Z].*$"
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    html: "^<[a-z]+>$"
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+    unicode: "^U[a-f0-9]+"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+schema_list:
+  - schema: lufs_flypy
+  - schema: lufs_pinyin
+switcher:
+  abbreviate_options: true
+  caption: "[方案菜单]"
+  fold_options: true
+  hotkeys:
+    - F2
+  option_list_separator: "/"
+  save_options:
+    - full_shape
+    - ascii_punct
+    - traditionalization
+    - emoji_suggestion

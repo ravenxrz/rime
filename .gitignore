@@ -2,7 +2,7 @@
 *.custom.yaml
 .DS_Store
 /*.userdb/
-/build/
+# /build/
 /rime.wiki/
 /sync/
 /test/
