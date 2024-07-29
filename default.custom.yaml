@@ -33,10 +33,10 @@ patch:
 
   key_binder/bindings:
     - when: paging
-      accept: bracketleft
+      accept: minus
       send: Page_Up
     - when: has_menu
-      accept: bracketright
+      accept: equal
       send: Page_Down
 
 
