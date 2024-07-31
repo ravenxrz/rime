@@ -1,0 +1,12 @@
+# Rime table
+#@/db_name	PY_c
+#@/db_type	tabledb
+#@/rime_version	1.11.2
+#@/tick	6
+哈	ha	1
+好处	hao chu	1
+你	ni	2
+你哈	ni ha	1
+你好	ni hao	2
+你好处	ni hao chu	1
+呀	ya	2

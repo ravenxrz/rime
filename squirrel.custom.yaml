@@ -1,9 +1,4 @@
-customization:
-  distribution_code_name: squirrel
-  distribution_version: 0.14.0
-  generator: "squirrel::UIStyleSettings"
-  modified_time: "2019-06-23"
-  rime_version: 1.5.3
+
 patch:
   "preset_color_schemes/metro": 
     author: "flypy.com"
